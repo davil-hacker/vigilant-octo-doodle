@@ -1,0 +1,72 @@
+name: Auto Update BD Fancode JSON
+
+on:
+  schedule:
+    - cron: "*/2 * * * *"  
+  workflow_dispatch:
+
+jobs:
+  update-bd-fancode:
+    runs-on: ubuntu-latest
+
+    steps:
+      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      
+      - name: Fetch & Transform Fancode JSON
+        env:
+          FANCODE_REMOTE_URL: ${{ secrets.FANCODE_REMOTE_URL }}
+        run: |
+          php -r '
+          $remoteUrl = getenv("FANCODE_REMOTE_URL");
+          if (!$remoteUrl) { exit(1); }
+          $jsonData = file_get_contents($remoteUrl);
+          if (!$jsonData) { exit(1); }
+          $data = json_decode($jsonData, true);
+          if (!$data || !isset($data["matches"])) { exit(1); }
+          $output = [];
+          $userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 ygx/69.1 Safari/537.36";
+          foreach ($data["matches"] as $match) {
+              $group = strtoupper($match["status"]) === "LIVE" ? "Fancode | LIVE" : "Fancode | UPCOMING";
+              $url = $match["adfree_url"] ?? "";
+             
+              if (strpos($url, "https://in-") === 0) {
+                  $url = str_replace("https://in-", "https://bd-", $url);
+              }
+              $output[] = [
+                  "group" => $group,
+                  "logo" => $match["src"] ?? "",
+                  "mobile" => "on",
+                  "name" => $match["title"] ?? $match["match_name"] ?? "",
+                  "premium" => false,
+                  "source" => [
+                      "headers" => [
+                          "User-Agent" => $userAgent
+                      ],
+                      "url" => $url
+                  ],
+                  "status" => "on",
+                  "tv" => "off"
+              ];
+          }
+          file_put_contents("bd_fancode.json", json_encode($output, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+          '
+
+      
+      - name: Commit & Push updated JSON
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add bd_fancode.json
+          git commit -m "Auto update BD Fancode JSON $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push origin main --force
