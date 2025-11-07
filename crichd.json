@@ -1,0 +1,362 @@
+[
+  {
+    "group": "CricHD",
+    "logo": "https://raw.githubusercontent.com/hasanhabibmottakin/h2so4/main/img/t_sports.png",
+    "mobile": "on",
+    "name": "T Sports HD",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d10.merichunidya.com:1686/hls/tenspk.m3u8?md5=TsndxFiOjuTAlS4PbBI8dw&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/18.png",
+    "mobile": "on",
+    "name": "PTV Sports",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d4.merichunidya.com:1686/hls/ptvpk.m3u8?md5=YeXwqwf6sFbrjBmIhM6dWA&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/19.png",
+    "mobile": "on",
+    "name": "Star sports 1 HD",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d4.merichunidya.com:1686/hls/star1in.m3u8?md5=kPCRFGNP6EZt4PjFlk8skA&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/19.png",
+    "mobile": "on",
+    "name": "Star sports 1 Hindi HD",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d5.merichunidya.com:1686/hls/starhindi.m3u8?md5=VMbMypi89HK0AGhNv2Y4aA&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/21_266.png",
+    "mobile": "on",
+    "name": "Sony Ten 1",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d4.merichunidya.com:1686/hls/ten1hd.m3u8?md5=anUTx6bVYlkpMvU0oQxaHQ&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/25_276.png",
+    "mobile": "on",
+    "name": "Sony Ten 3",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d8.merichunidya.com:1686/hls/sonyespnind.m3u8?md5=xHat-jvButU-nLIQ5kpK1A&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/20.png",
+    "mobile": "on",
+    "name": "Willow Cricket",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d1.merichunidya.com:1686/hls/willowusa.m3u8?md5=E_5BaRZ7uw7VQZvayYeKVA&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/55.png",
+    "mobile": "on",
+    "name": "Willow Extra",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d8.merichunidya.com:1686/hls/willowextra.m3u8?md5=YKnF7LDFBJ4RQBwK2mVykA&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://raw.githubusercontent.com/hasanhabibmottakin/h2so4/main/img/asports.jpg",
+    "mobile": "on",
+    "name": "A Sports HD",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d3.merichunidya.com:1686/hls/asportshd.m3u8?md5=lCn_vJur8ygUUu8VW6Wc7Q&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/50.gif",
+    "mobile": "on",
+    "name": "Super Cricket",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d5.merichunidya.com:1686/hls/supercricket.m3u8?md5=8tJLSEj6fmN5NVXbAt3iCQ&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/137.png",
+    "mobile": "on",
+    "name": "Sky Sports 1",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d6.merichunidya.com:1686/hls/skysme.m3u8?md5=ubQXddvnmKcXYd_HKXnMfQ&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/138.png",
+    "mobile": "on",
+    "name": "Sky Sports 2",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d6.merichunidya.com:1686/hls/skyscric.m3u8?md5=LjDFUm5XcOq-8zC4VQD3bQ&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/144.png",
+    "mobile": "on",
+    "name": "Sky Sports 3",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d3.merichunidya.com:1686/hls/skysact.m3u8?md5=CDzAAH-k3KPlRxroS69i9g&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/139.png",
+    "mobile": "on",
+    "name": "Sky Sports 4",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d9.merichunidya.com:1686/hls/skysgol.m3u8?md5=Z7G2QiSMFzf2eIbSHkytPg&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/140.png",
+    "mobile": "on",
+    "name": "Sky Sports 5",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d5.merichunidya.com:1686/hls/skysprem.m3u8?md5=RcKvJC_fQyfk77QSP4_suw&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/12.gif",
+    "mobile": "on",
+    "name": "Skys Tennis",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d9.merichunidya.com:1686/hls/skystennis.m3u8?md5=Y0s4RP_Q7LfGHAhHIcieMw&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/10.gif",
+    "mobile": "on",
+    "name": "TNT Sports 1",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d1.merichunidya.com:1686/hls/bbtsp1.m3u8?md5=b54qxGroOnbMdkdeHEs_dg&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/11.gif",
+    "mobile": "on",
+    "name": "TNT Sports 2",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d7.merichunidya.com:1686/hls/bbtsp2.m3u8?md5=gEN7FPncsJiCF0HrcXBBpg&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/12.gif",
+    "mobile": "on",
+    "name": "TNT Sports 3",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d1.merichunidya.com:1686/hls/bbtsp3.m3u8?md5=OrVjZt0ScSXIZXtu7GQYGw&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/13.gif",
+    "mobile": "on",
+    "name": "TNT Sports 4",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d10.merichunidya.com:1686/hls/bbtespn.m3u8?md5=PuWN2s5L0H3z-TjS8_vNQQ&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "https://crichdi.com/assets/uploads/channels/54.png",
+    "mobile": "on",
+    "name": "Laliga Hd",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d1.merichunidya.com:1686/hls/laligauk.m3u8?md5=Ol9LGCp0YuFVV5YJqrAdqw&expires=1762515681"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "ch5",
+    "mobile": "on",
+    "name": "Ch5",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d1.merichunidya.com:1686/hls/hdchnl5.m3u8?md5=FMRrtXBqsW6zN6YnQNTayA&expires=1762515679"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "",
+    "mobile": "on",
+    "name": "Premiar Sports",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": "https://profamouslife.com/"
+      },
+      "url": "https://d1.merichunidya.com:1686/hls/hdchnl2.m3u8?md5=c1NiQZgMQKV5X3LrBCzZJg&expires=1762515680"
+    },
+    "status": "on",
+    "tv": "off"
+  },
+  {
+    "group": "CricHD",
+    "logo": "skysfor1",
+    "mobile": "on",
+    "name": "Sky Sport F1",
+    "premium": false,
+    "source": {
+      "headers": {
+        "Referer": ""
+      },
+      "url": ""
+    },
+    "status": "on",
+    "tv": "off"
+  }
+]
