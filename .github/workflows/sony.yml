@@ -1,0 +1,52 @@
+name: Events data fetch
+
+on:
+  schedule:
+    - cron: "*/2 * * * *"  
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    env:
+      API_URL: ${{ secrets.api_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y dos2unix jq
+
+      - name: Fetch M3U
+        run: |
+          curl -s "$API_URL" -o sony.m3u
+          dos2unix sony.m3u
+
+      - name: Convert M3U to JSON
+        run: |
+          echo "[" > sony.json
+          awk '
+            BEGIN { first=1 }
+            /^#EXTINF/ {
+              name = substr($0, index($0, ",")+1)
+              logo = "Unknown"
+              if(match($0, /tvg-logo="([^"]+)"/, arr)) { logo=arr[1] }
+              getline url
+              gsub(/"/, "\\\"", name)
+              gsub(/"/, "\\\"", url)
+              if(!first){print ","}
+              first=0
+              printf("{\"group\":\"SonyEvent\",\"logo\":\"%s\",\"mobile\":\"on\",\"name\":\"%s\",\"premium\":false,\"source\":{\"headers\":{\"User-Agent\":\"com.sonyliv/6.22.4 (Android 14; en_GB; SWTV-24AE-4K NF)\"},\"url\":\"%s\"},\"status\":\"on\",\"tv\":\"off\"}", logo, name, url)
+            }
+          ' sony.m3u >> sony.json
+          echo "]" >> sony.json
+
+      - name: Commit and Push
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add sony.json
+          git commit -m "Auto update sony.json" || echo "No changes to commit"
+          git push
